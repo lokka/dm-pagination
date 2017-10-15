@@ -4,7 +4,7 @@ require_relative 'lib/dm-pager/version'
 
 Gem::Specification.new do |s|
   s.name = %q{dm-pager}
-  s.version = DataMapper::Pagination.VERSION
+  s.version = DataMapper::Pagination::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["TJ Holowaychuk"]
