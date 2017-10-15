@@ -71,7 +71,7 @@ module DataMapper
         more(:after),
         next_link,
         last_link,
-      '</ul>'].join
+        '</ul>'].join.html_safe
     end
 
     private
@@ -88,7 +88,7 @@ module DataMapper
     # Link to _page_ with optional anchor tag _contents_.
 
     def link_to page, contents = nil
-      %(<a href="#{uri_for(page)}">#{contents || page}</a>)
+      %(<a href="#{uri_for(page)}">#{contents || page}</a>).html_safe
     end
 
     ##
@@ -169,7 +169,7 @@ module DataMapper
     # Renders a <li> with the given _css_class_ and _contents_.
 
     def li css_class = nil, contents = nil
-      "<li#{%( class="#{css_class}") if css_class}>#{contents}</li>\n"
+      "<li#{%( class="#{css_class}") if css_class}>#{contents}</li>\n".html_safe
     end
 
     ##
