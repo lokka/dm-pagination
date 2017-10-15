@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require 'dm-pager/version'
+require 'lib/dm-pager/version'
 
 Gem::Specification.new do |s|
   s.name = %q{dm-pager}
